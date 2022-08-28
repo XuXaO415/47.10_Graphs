@@ -68,20 +68,6 @@ class Graph {
 
 
   // this function returns an array of Node values using BFS
-  // breadthFirstSearch(start, seen = new Set(), result = [], queue = []) {
-  //   if (!seen.has(start)) { // if the start node is not in the seen set
-  //     seen.add(start); // add the start node to the seen set
-  //     result.push(start.value); // add the start node to the result array
-  //     queue.push(start); // add the start node to the queue
-  //   }
-  //   for (let neighbor of start.adjacent) { // for each neighbor of the start node
-  //     if (!seen.has(neighbor)) { // if the neighbor is not in the seen set
-  //       this.breadthFirstSearch(neighbor, seen, result, queue);
-  //     }
-  //   }
-  //   if (!queue.length) return result;
-  //   return this.breadthFirstSearch(queue.shift(), seen, result, queue);
-  // }
 
   //https://www.techiedelight.com/breadth-first-search/
   breadthFirstSearch(start, seen = new Set(), result = []) {
